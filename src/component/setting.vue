@@ -31,7 +31,7 @@
             </div>
         </div>
     </div>
-    <div class="position-relative me-5" style="height: 300px;">
+    <div class="position-relative me-5" style="height: 290px;">
         <div>
             <a class=" position-absolute  d-flex align-items-center justify-content-center signout" >
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
