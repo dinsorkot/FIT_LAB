@@ -5,7 +5,10 @@
   <div class="container text-white">
     <div class="row">
       <div class="col">
-        <div class="row w-100 color" style="width: 20rem; height: 15rem;border-radius: 25px;">
+        <div
+          class="row w-100 color"
+          style="width: 20rem; height: 15rem; border-radius: 25px"
+        >
           <div class="col">
             <div
               class="bg-white w-60 h-55 m-4"
@@ -35,7 +38,10 @@
         </div>
       </div>
       <div class="col">
-        <div class="row w-100 color" style="width: 20rem; height: 15rem;border-radius: 25px;">
+        <div
+          class="row w-100 color"
+          style="width: 20rem; height: 15rem; border-radius: 25px"
+        >
           <div class="col">
             <div
               class="bg-white w-60 h-55 m-4"
@@ -65,7 +71,10 @@
         </div>
       </div>
       <div class="col">
-        <div class="row w-100 color" style="width: 20rem; height: 15rem;border-radius: 25px;">
+        <div
+          class="row w-100 color"
+          style="width: 20rem; height: 15rem; border-radius: 25px"
+        >
           <div class="col">
             <div
               class="bg-white w-60 h-55 m-4"
@@ -96,11 +105,16 @@
       </div>
     </div>
   </div>
-  <div class="d-flex text-white" style="height: 50vh;">
-    <div class="color m-5" style="width: 60vh ;border-radius: 25px;">
+  <div class="d-flex text-white" style="height: 50vh">
+    <div class="color m-5" style="width: 60vh; border-radius: 25px">
       <div class="d-flex">
         <div class="row">
-          <div class="col w-100 h-100"><div class="bg-white mt-5" style="width: 150px;height:200px;margin-left: 20%;border-radius: 100px;"> </div></div>
+          <div class="col w-100 h-100">
+            <div
+              class="bg-white mt-5"
+              style="width: 150px; height: 200px; margin-left: 20%; border-radius: 100px"
+            ></div>
+          </div>
           <div class="col m-5" style="width: 50vh; height: 100%">
             <div class="row"><h3>Calories</h3></div>
             <div class="row">...% ...%</div>
@@ -112,7 +126,7 @@
         </div>
       </div>
     </div>
-    <div class="m-5 color" style="width: 92vh ;border-radius: 25px;">
+    <div class="m-5 color" style="width: 92vh; border-radius: 25px">
       <h1 class="d-flex justify-content-center d-flex align-items-center mt-5">GRAPH</h1>
     </div>
   </div>
