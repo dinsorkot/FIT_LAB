@@ -13,8 +13,8 @@ const height = ref(170);
       <div class="col-sm-6 ">
         <div class="row h-100">
           <div class="col"></div>
-          <div class="col-sm-6 d-flex justify-content-center align-items-center w-100">
-            <div class="text-center w-100 pt-5">
+          <div class="col-sm-6 col-xxl-6 d-flex justify-content-center align-items-center">
+            <div class="text-center pt-5">
               <div class="mb-5">
                 <h1>sign in</h1>
               </div>
@@ -106,7 +106,7 @@ const height = ref(170);
               </div>
             </div>
           </div>
-          <div class="col d-flex justify-content-end align-items-end">
+          <div class="col d-flex justify-content-center align-items-end">
             <div class="mb-3">
               <RouterLink to="/" class="text-decoration-none text-light">have accout?</RouterLink>
             </div>
