@@ -11,7 +11,7 @@ import { RouterLink } from 'vue-router';
     </div>
     <div class="">
         <div class="row m-0">
-            <div class="col-1 text-light text-center p-0" style="background-color: #272727;height:100vh; ">
+            <div class="col-1 text-light text-center p-0" style="background-color: #272727;height:89.3vh; width:100px;">
                 <div class="sidemenu">
                     <RouterLink to="/home">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
