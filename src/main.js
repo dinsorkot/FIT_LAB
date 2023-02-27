@@ -5,8 +5,10 @@ import App from './App.vue'
 import router from './router'
 //firebase
 import './firebase.js';
-
-import './assets/main.css'
+// Import all of Bootstrap's CSS
+import"bootstrap/dist/css/bootstrap.css";
+// Import all of Bootstrap's JS
+import"bootstrap/dist/js/bootstrap.js";
 
 const app = createApp(App)
 
