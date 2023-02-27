@@ -2,10 +2,10 @@
 import { RouterLink } from 'vue-router'
 </script>
 <template>
-  <div class="" style="height: 100vh">
-    <div class="row h-100 text-light">
-      <div class="col" style="background-color: #272727">logo</div>
-      <div class="col">
+  <div class="" style="height: 100vh;">
+    <div class="row w-100 h-100 text-light">
+      <div class="col-sm-6 " style="background-color: #272727">logo</div>
+      <div class="col-sm-6 ">
         <div class="row h-100">
           <div class="col"></div>
           <div class="col d-flex justify-content-center align-items-center" style="width: 537px">
