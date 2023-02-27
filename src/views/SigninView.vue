@@ -8,12 +8,12 @@ const height = ref(170);
 </script>
 <template>
   <div class="" style="height: 100vh">
-    <div class="row w-100 h-100 text-light">
+    <div class="row w-100 h-100 text-light m-0">
       <div class="col-sm-6 " style="background-color: #272727">logo</div>
       <div class="col-sm-6 ">
         <div class="row h-100">
           <div class="col"></div>
-          <div class="col d-flex justify-content-center align-items-center w-100">
+          <div class="col-sm-6 d-flex justify-content-center align-items-center w-100">
             <div class="text-center w-100 pt-5">
               <div class="mb-5">
                 <h1>sign in</h1>
