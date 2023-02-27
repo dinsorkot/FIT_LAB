@@ -29,10 +29,10 @@ import { RouterLink } from 'vue-router'
                   </form>
                 </div>
               </div>
-              <div class="mb-5">
-                <button class="btn btn-light rounded-pill" style="height: 50px; width: 150px">
-                  login
-                </button>
+              <div class="mb-5 ">
+                <RouterLink to="home" class="btn btn-light rounded-pill position-relative" style="height: 50px; width: 150px;">
+                  <div class="position-absolute top-50 start-50 translate-middle">login</div>
+                </RouterLink>
               </div>
               <div class="mb-3">
                 <a class="btn btn-light rounded-pill loginMore">
