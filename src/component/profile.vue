@@ -1,7 +1,7 @@
 <template>
   <div class="container d-flex justify-content-center" style="margin: 20px">
     <div>
-      <div class="card" style="width: 30rem; height: 15rem">
+      <div class="card" style="width: 70rem; height: 15rem; background-color: #1e1e1e">
         <div
           class="pencilicon"
           style="
@@ -24,8 +24,17 @@
             />
           </svg>
         </div>
-        <div class="card-body">
-          <div class="card" style="height: 150px; width: 150px; display:flex;justify-content: center; justify-items: center;" >
+        <div class="card-body d-flex">
+          <span
+            class="card"
+            style="
+              height: 150px;
+              width: 150px;
+              display: flex;
+              justify-content: center;
+              justify-items: center;
+            "
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="150"
@@ -33,14 +42,51 @@
               fill="currentColor"
               class="bi bi-person"
               viewBox="0 0 16 16"
-              
             >
               <path
                 d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"
               />
             </svg>
+          </span>
+          <span class="Gropprofile" style="margin-left: 10px; color: white">
+            <div class="Usernametext" style="font-size: 20px">Username (age)</div>
+            <div class="Sextext" style="font-size: 16px">sex</div>
+            <div class="Weighttext" style="font-size: 16px">weight</div>
+            <div class="Heighttext" style="font-size: 16px">height</div>
+          </span>
+        </div>
+      </div>
+      <div>
+        <div class="row">
+          <div class="col">
+            <div
+              class="container border"
+              style="width: 35rem; height: 25rem; margin-top: 15px"
+            >
+              <div class="d-flex justify-content-center" style="color: white">
+                body type
+              </div>
+            </div>
           </div>
-          
+          <div class="col">
+            <div class="container border p-5 my-3 border">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-person"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"
+                  />
+                </svg>
+                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
