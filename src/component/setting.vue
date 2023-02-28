@@ -1,5 +1,5 @@
 <template>
-    <div class="container mt-5 btnclick">
+    <div class="container  mt-5 btnclick">
         <div class="d-flex align-items-center h-100 ms-5">
             <div class="card d-flex align-items-center justify-content-center"
                 style="background-color: #121212;width:150px; height:150px; border-radius: 25px;">
@@ -31,7 +31,7 @@
             </div>
         </div>
     </div>
-    <div class="position-relative me-5" style="height: 290px;">
+    <div class="position-relative me-5" style="height: 200px;">
         <div>
             <a class=" position-absolute  d-flex align-items-center justify-content-center signout" >
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
@@ -60,7 +60,7 @@
 
 .signout {
     right: 10px;
-    bottom: 0px;
+    bottom: 100px;
     background-color: #1E1E1E;
     border-radius: 25px;
     width: 100px;
@@ -68,8 +68,6 @@
     transition: 0.5s;
 }
 .signout:hover {
-    right: 5px;
-    bottom: -5px;
     border-radius: 25px;
     width: 110px;
     height: 70px;

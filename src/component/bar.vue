@@ -2,8 +2,6 @@
 import { RouterLink } from 'vue-router'
 </script>
 <template>
-  <slot name="page"></slot>
-  <div class="position-fix">
   <div>
     <nav class="navbar" style="background-color: #272727; height: 80px">
       <div class="container-fluid">
@@ -11,10 +9,10 @@ import { RouterLink } from 'vue-router'
       </div>
     </nav>
   </div>
-  <div class="">
-    <div class="row m-0">
-      <div class="col-1 text-light text-center p-0" style="background-color: #272727; width: 80px">
-        <div class="sidemenu">
+  <div class="position-fixed w-100 bottom-0 start-50 translate-middle-x z-1">
+    <div class="">
+      <div class="row justify-content-center text-light text-center p-0" style="background-color: #272727; height: 60px">
+        <div class="sidemenu col-1">
           <RouterLink to="/home">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +28,7 @@ import { RouterLink } from 'vue-router'
             </svg>
           </RouterLink>
         </div>
-        <div class="sidemenu">
+        <div class="sidemenu col-1">
           <RouterLink to="/dashboard">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +44,7 @@ import { RouterLink } from 'vue-router'
             </svg>
           </RouterLink>
         </div>
-        <div class="sidemenu">
+        <div class="sidemenu col-1">
           <RouterLink to="/form">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +64,7 @@ import { RouterLink } from 'vue-router'
             </svg>
           </RouterLink>
         </div>
-        <div class="sidemenu">
+        <div class="sidemenu col-1">
           <RouterLink to="/profile">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +80,7 @@ import { RouterLink } from 'vue-router'
             </svg>
           </RouterLink>
         </div>
-        <div class="sidemenu">
+        <div class="sidemenu col-1">
           <RouterLink to="/setting">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -102,12 +100,10 @@ import { RouterLink } from 'vue-router'
           </RouterLink>
         </div>
       </div>
-      <div class="col p-0 m-0">
-        <!--หน้าที่พวกมึงต้องใช้-->
-      </div>
     </div>
   </div>
-</div>
+
+  <slot name="page"></slot>
 </template>
 <style scoped>
 .sidemenu {
