@@ -13,12 +13,12 @@
             <div class="col d-flex justify-content-center align-items-center">
               <div
                 class="colorbackicon w-60 h-55 m-4"
-                style="border-radius: 25px; height: 100px"
+                style="border-radius: 50px; height: 150px;width:150px"
               >
-                <div class="text-dark d-flex justify-content-center">
+                <div class="text-dark d-flex justify-content-center mt-4">
                   <svg
                     fill="#ffffff"
-                    width="100px"
+                    width="80px"
                     height="100px"
                     viewBox="0 -3.84 122.88 122.88"
                     version="1.1"
@@ -62,9 +62,9 @@
             <div class="col d-flex justify-content-center align-items-center">
               <div
                 class="colorbackicon w-60 h-55 m-4"
-                style="border-radius: 25px; height: 100px"
+                style="border-radius: 50px; height: 150px;width:150px"
               >
-                <div class="text-dark d-flex justify-content-center">
+                <div class="text-dark d-flex justify-content-center mt-4">
                   <svg
                     fill="#f6f4f4"
                     height="99px"
@@ -112,8 +112,8 @@
               </div>
             </div>
             <div class="col" style="margin-top: 75px">
-              <div >Workouts</div>
-              <div >1 h 23 min</div>
+              <div ><h3>Workouts</h3></div>
+              <div ><h2>1 h 23 min</h2></div>
               <div class="colorfontmini">ACTIVE</div>
             </div>
           </div>
@@ -126,9 +126,9 @@
             <div class="col d-flex justify-content-center align-items-center">
               <div
                 class="colorbackicon w-60 h-55 m-4"
-                style="border-radius: 25px; height: 100px"
+                style="border-radius: 50px; height: 150px;width:150px"
               >
-                <div class="text-dark d-flex justify-content-center">
+                <div class="text-dark d-flex justify-content-center mt-4">
                   <svg
                     width="100px"
                     height="100px"
@@ -154,9 +154,9 @@
               </div>
             </div>
             <div class="col" style="margin-top: 75px">
-              <div class="row">Sleep Analysis</div>
-              <div class="row">1 h 23 min</div>
-              <div class="row">IN BAD AVERAGE</div>
+              <div ><h4>Sleep Analysis</h4></div>
+              <div ><h2>1 h 23 min</h2></div>
+              <div class="colorfontmini">IN BAD AVERAGE</div>
             </div>
           </div>
         </div>
@@ -174,7 +174,11 @@
               <div
                 class=" my-5  border border-white border-2"
                 style="height: 200px; margin-left: 20%;border-radius: 100%; "
-              ></div>
+              > <Bar
+    id="my-chart-id"
+    :options="chartOptions"
+    :data="chartData"
+  /></div>
             </div>
             <div class="col m-5" style="width: 65vh; height: 100%">
               <div class="row">
@@ -227,3 +231,23 @@ font-size:small;
 
 }
 </style>
+<script>
+import { Bar } from 'vue-chartjs'
+import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js'
+ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
+export default {
+  name: 'BarChart',
+  components: { Bar },
+  data() {
+    return {
+      chartData: {
+        labels: [ 'January', 'February', 'March' ],
+        datasets: [ { data: [40, 20, 12] } ]
+      },
+      chartOptions: {
+        responsive: true
+      }
+    }
+  }
+}
+</script>
