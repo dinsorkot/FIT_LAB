@@ -174,11 +174,7 @@
               <div
                 class=" my-5  border border-white border-2"
                 style="height: 200px; margin-left: 20%;border-radius: 100%; "
-              > <Bar
-    id="my-chart-id"
-    :options="chartOptions"
-    :data="chartData"
-  /></div>
+              > </div>
             </div>
             <div class="col m-5" style="width: 65vh; height: 100%">
               <div class="row">
@@ -231,23 +227,4 @@ font-size:small;
 
 }
 </style>
-<script>
-import { Bar } from 'vue-chartjs'
-import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js'
-ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
-export default {
-  name: 'BarChart',
-  components: { Bar },
-  data() {
-    return {
-      chartData: {
-        labels: [ 'January', 'February', 'March' ],
-        datasets: [ { data: [40, 20, 12] } ]
-      },
-      chartOptions: {
-        responsive: true
-      }
-    }
-  }
-}
-</script>
+
