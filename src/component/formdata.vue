@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-  const lo  = ref(); 
+  const lo   = ref();
 </script>
 
 <template>
