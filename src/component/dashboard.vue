@@ -173,8 +173,8 @@
             <div class="col w-100 h-100">
               <div
                 class=" my-5  border border-white border-2"
-                style="height: 200px; margin-left: 20%;border-radius: 100%; "
-              > </div>
+                
+              > <canvas id="myChart" width="200" height="200"></canvas></div>
             </div>
             <div class="col m-5" style="width: 65vh; height: 100%">
               <div class="row">
@@ -203,12 +203,16 @@
         </div>
       </div>
       <div class="m-5 color" style="width: 92vh; border-radius: 25px">
-        <h1 class="d-flex justify-content-center d-flex align-items-center mt-5">
-          GRAPH
-        </h1>
+        <div class="m-3">
+          <canvas id="graphLine" width="150" height="60"></canvas>
+          
+          
+        </div>
       </div>
     </div>
   </div>
+  
+
 </template>
 
 <style>
@@ -228,3 +232,58 @@ font-size:small;
 }
 </style>
 
+<script >
+import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js'
+import Chart from 'chart.js/auto';
+
+ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
+
+export default {
+  name: 'HelloWorld',
+  props: { msg:String },
+  mounted() {
+    const ctx =document.getElementById('myChart');
+    const data = {
+  datasets: [{
+    label: 'My First Dataset',
+    data: [300, 50, 100,60],
+    backgroundColor: [
+      'rgb(255, 99, 132)',
+      'rgb(54, 162, 235)',
+      'rgb(255, 205, 86)',
+      'rgb(0, 0, 0)'
+    ],
+    hoverOffset: 4
+  }]
+};
+    const myChart = new Chart(ctx, { type:'doughnut',data:data,});
+
+    myChart;
+
+
+    const ghline =document.getElementById('graphLine');
+const datas = {
+  labels:"1 2 3 4 5 6 7",
+  datasets: [{
+    label: 'My First Dataset',
+    data: [65, 59, 80, 81, 56, 55, 40],
+    fill: false,
+    borderColor: 'rgb(75, 192, 192)',
+    tension: 0.1
+  }]
+};
+
+  const graphLine = new Chart(ghline, { type: 'line',data:datas,});
+
+  graphLine;
+
+  }
+  
+  
+
+}
+
+
+
+
+</script>
